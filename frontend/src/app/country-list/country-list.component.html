@@ -1,0 +1,50 @@
+<header class="top-bar">
+  <div class="top-bar-container">
+    <div class="logo">
+      <a href="/">Country Info</a>
+    </div>
+    <nav class="menu">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" placeholder="Search countries..." />
+      <button>Search</button>
+    </div>
+  </div>
+</header>
+
+
+<div class="title"><h2>Country Information</h2></div>
+
+<div class="country-list">
+  <div
+    *ngFor="let country of countries"
+    class="country-card"
+    (click)="selectCountry(country)"
+  >
+    <img
+      [src]="country.flag"
+      alt="{{ country.name }} flag"
+      class="country-flag"
+      onerror="this.onerror=null;this.src='default-flag-url.png';"
+    />
+    <h3>{{ country.name }}</h3>
+    <p><strong>Capital:</strong> {{ country.capital }}</p>
+    <p><strong>Region:</strong> {{ country.region }}</p>
+    <p><strong>Population:</strong> {{ country.population | number }}</p>
+  </div>
+</div>
+
+<div><br></div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; {{ currentYear }} Country Information. All Rights Reserved.</p>
+    <nav class="footer-nav">
+      <a href="/privacy-policy">Privacy Policy</a>
+      <a href="/terms-of-service">Terms of Service</a>
+      <a href="/contact-us">Contact Us</a>
+    </nav>
+  </div>
+</footer>

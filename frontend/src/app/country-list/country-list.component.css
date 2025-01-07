@@ -1,0 +1,160 @@
+
+.title {
+  background-color: #D0DDD0;
+  text-align: center;
+}
+
+.country-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #ffffff;
+  }
+  
+  .country-card {
+    width: 30%; 
+    background-color: #D0DDD0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .country-flag {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  p {
+    margin: 5px 0;
+    font-size: 1em;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .country-card {
+      width: 45%; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .country-card {
+      width: 100%; 
+    }
+  }
+
+  .footer {
+    background-color: #6f7e5e;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  .footer-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .footer-nav {
+    margin-top: 10px;
+  }
+  .footer-nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-nav a:hover {
+    text-decoration: underline;
+  }
+  
+
+ /* General Top Bar Styling */
+.top-bar {
+  background-color: #6f7e5e;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+/* Logo Styling */
+.logo a {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Menu Styling */
+.menu {
+  margin-left: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Search Box Styling */
+.search-box {
+  margin-left: auto; /* Pushes the search box to the right */
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-box button {
+  background-color: #727D73;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 0 4px 4px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #374538;
+}
